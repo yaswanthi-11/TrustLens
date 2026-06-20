@@ -35,17 +35,17 @@ body {
 }
 
 /* Make input placeholder text visible on dark backgrounds */
-::placeholder {
+.form-control-custom::placeholder {
   color: #94A3B8 !important;
   opacity: 1 !important;
 }
 
-::-webkit-input-placeholder {
+.form-control-custom::-webkit-input-placeholder {
   color: #94A3B8 !important;
   opacity: 1 !important;
 }
 
-::-moz-placeholder {
+.form-control-custom::-moz-placeholder {
   color: #94A3B8 !important;
   opacity: 1 !important;
 }
