@@ -1,0 +1,10 @@
+.git
+.gitignore
+.vs
+.tools
+frontend/
+database/
+target/
+*.md
+*.bat
+*.ps1

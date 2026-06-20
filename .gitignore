@@ -1,0 +1,7 @@
+target/
+.tools/
+.vs/
+.idea/
+*.log
+*.class
+node_modules/
