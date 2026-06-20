@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import api from '../services/api';
 import { connectWebSocket, disconnectWebSocket } from '../services/websocketService';
@@ -51,8 +52,17 @@ const ScannerPage = () => {
     };
   }, []);
 
+  const navigate = useNavigate();
+
   const handleScan = async (e) => {
     e.preventDefault();
+
+    if (!user) {
+      // Redirect to login if they try to scan without an account
+      navigate('/login');
+      return;
+    }
+
     if (!url.trim()) {
       setError('Please input a valid URL or Domain.');
       return;
