@@ -36,18 +36,18 @@ body {
 
 /* Make input placeholder text visible on dark backgrounds */
 .form-control-custom::placeholder {
-  color: #94A3B8 !important;
-  opacity: 1 !important;
+  color: #FFFFFF !important;
+  opacity: 0.7 !important;
 }
 
 .form-control-custom::-webkit-input-placeholder {
-  color: #94A3B8 !important;
-  opacity: 1 !important;
+  color: #FFFFFF !important;
+  opacity: 0.7 !important;
 }
 
 .form-control-custom::-moz-placeholder {
-  color: #94A3B8 !important;
-  opacity: 1 !important;
+  color: #FFFFFF !important;
+  opacity: 0.7 !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -100,9 +100,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Form Controls Custom */
 .form-control-custom {
-  background: rgba(15, 23, 42, 0.6);
-  border: 1px solid var(--glass-border);
-  color: var(--color-text);
+  background: rgba(15, 23, 42, 0.6) !important;
+  border: 1px solid var(--glass-border) !important;
+  color: #FFFFFF !important;
   border-radius: 8px;
   padding: 12px 16px;
   font-family: var(--font-sans);
@@ -110,9 +110,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .form-control-custom:focus {
-  background: rgba(15, 23, 42, 0.8);
-  border-color: var(--color-accent);
-  box-shadow: 0 0 0 2px rgba(var(--color-accent-rgb), 0.2);
+  background: rgba(15, 23, 42, 0.8) !important;
+  border-color: var(--color-accent) !important;
+  box-shadow: 0 0 0 2px rgba(var(--color-accent-rgb), 0.2) !important;
+  color: #FFFFFF !important;
   outline: none;
 }
 
