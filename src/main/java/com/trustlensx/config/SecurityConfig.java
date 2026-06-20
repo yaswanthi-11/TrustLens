@@ -62,6 +62,13 @@ public class SecurityConfig {
                 // WebSocket endpoint
                 .requestMatchers("/ws/**").permitAll()
                 
+                // Actuator Health Checks (for Render/Railway)
+                .requestMatchers("/actuator/**").permitAll()
+                
+                // Root endpoint for browser testing
+                .requestMatchers(HttpMethod.GET, "/").permitAll()
+
+                
                 // Any other requests
                 .anyRequest().authenticated()
             )
